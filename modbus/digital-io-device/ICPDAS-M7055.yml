@@ -1,0 +1,55 @@
+name: ICPDAS-M7055
+manufacturer: ICP DAS
+description: Digital IO Module with 8 isolated input channels and 8 isolated output channels
+model: M-7055
+labels:
+  - Modbus
+  - RTU
+deviceResources:
+  - description: 'On/Off , 0-OFF 1-ON'
+    name: DO0
+    isHidden: true
+    properties:
+      valueType: Bool
+      readWrite: RW
+      units: On/Off
+    attributes:
+      primaryTable: COILS
+      startingAddress: 0
+  - description: 'On/Off , 0-OFF 1-ON'
+    name: DO1
+    isHidden: true
+    properties:
+      valueType: Bool
+      readWrite: RW
+      units: On/Off
+    attributes:
+      primaryTable: COILS
+      startingAddress: 1
+  - description: 'On/Off , 0-OFF 1-ON'
+    name: DO2
+    isHidden: true
+    properties:
+      valueType: Bool
+      readWrite: RW
+      units: On/Off
+    attributes:
+      primaryTable: COILS
+      startingAddress: 2
+deviceCommands:
+  - name: DO
+    isHidden: false
+    readWrite: RW
+    resourceOperations:
+      - deviceResource: DO0
+        mappings:
+          'false': 'OFF'
+          'true': 'ON'
+      - deviceResource: DO1
+        mappings:
+          'false': 'OFF'
+          'true': 'ON'
+      - deviceResource: DO2
+        mappings:
+          'false': 'OFF'
+          'true': 'ON'

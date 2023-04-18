@@ -1,0 +1,293 @@
+name: "ethernetip-sim-profile"
+model: "rta-server"
+description: "Serverside code for rta-stack"
+
+deviceResources:
+  -
+    name: "Implicit-O2T-Settings"
+    isHidden: true
+    description: "Settings for Originator to Target Implicit Data Exchange"
+    attributes:
+      { type: "O2TSettings", assemblyID: 112, "size": 496, "includeHeader32bit": true }
+    properties:
+      valueType: "String"
+      readWrite: "R"
+  -
+    name: "Implicit-T2O-Settings"
+    isHidden: true
+    description: "Settings for Target to Originator Implicit Data Exchange"
+    attributes:
+      { type: "T2OSettings", assemblyID: 100, "size": 496, "includeHeader32bit": false }
+    properties:
+      valueType: "String"
+      readWrite: "R"
+  -
+    name: "DO0"
+    isHidden: false
+    description: "Digital Output 0"
+    attributes:
+      { offsetBits: 0, offsetBytes: 0, "type": "T2O" }
+    properties:
+      valueType: "Bool"
+      readWrite: "R"
+  -
+    name: "DO1"
+    isHidden: false
+    description: "Digital Output 1"
+    attributes:
+      { offsetBits: 1, offsetBytes: 0, "type": "T2O" }
+    properties:
+      valueType: "Bool"
+      readWrite: "R"
+  -
+    name: "DO2"
+    isHidden: false
+    description: "Digital Output 2"
+    attributes:
+      { offsetBits: 2, offsetBytes: 0, "type": "T2O" }
+    properties:
+      valueType: "Bool"
+      readWrite: "R"
+  -
+    name: "DO3"
+    isHidden: false
+    description: "Digital Output 3"
+    attributes:
+      { offsetBits: 3, offsetBytes: 0, "type": "T2O" }
+    properties:
+      valueType: "Bool"
+      readWrite: "R"
+  -
+    name: "DO4"
+    isHidden: false
+    description: "Digital Output 4"
+    attributes:
+      { offsetBits: 4, offsetBytes: 0, "type": "T2O" }
+    properties:
+      valueType: "Bool"
+      readWrite: "R"
+  -
+    name: "DO5"
+    isHidden: false
+    description: "Digital Output 5"
+    attributes:
+      { offsetBits: 5, offsetBytes: 0, "type": "T2O" }
+    properties:
+      valueType: "Bool"
+      readWrite: "R"
+  -
+    name: "DO6"
+    isHidden: false
+    description: "Digital Output 6"
+    attributes:
+      { offsetBits: 6, offsetBytes: 0, "type": "T2O" }
+    properties:
+      valueType: "Bool"
+      readWrite: "R"
+  -
+    name: "DI0"
+    isHidden: false
+    description: "Digital Input 0"
+    attributes:
+      { offsetBits: 0, offsetBytes: 0, "type": "O2T" }
+    properties:
+      valueType: "Bool"
+      readWrite: "W"
+  -
+    name: "DI1"
+    isHidden: false
+    description: "Digital Input 1"
+    attributes:
+      { offsetBits: 1, offsetBytes: 0, "type": "O2T" }
+    properties:
+      valueType: "Bool"
+      readWrite: "W"
+  -
+    name: "DI2"
+    isHidden: false
+    description: "Digital Input 2"
+    attributes:
+      { offsetBits: 2, offsetBytes: 0, "type": "O2T" }
+    properties:
+      valueType: "Bool"
+      readWrite: "W"
+  -
+    name: "DI3"
+    isHidden: false
+    description: "Digital Input 3"
+    attributes:
+      { offsetBits: 3, offsetBytes: 0, "type": "O2T" }
+    properties:
+      valueType: "Bool"
+      readWrite: "W"
+  -
+    name: "DI4"
+    isHidden: false
+    description: "Digital Input 4"
+    attributes:
+      { offsetBits: 4, offsetBytes: 0, "type": "O2T" }
+    properties:
+      valueType: "Bool"
+      readWrite: "W"
+  -
+    name: "DI5"
+    isHidden: false
+    description: "Digital Input 5"
+    attributes:
+      { offsetBits: 5, offsetBytes: 0, "type": "O2T" }
+    properties:
+      valueType: "Bool"
+      readWrite: "W"
+  -
+    name: "DI6"
+    isHidden: false
+    description: "Digital Input 6"
+    attributes:
+      { offsetBits: 6, offsetBytes: 0, "type": "O2T" }
+    properties:
+      valueType: "Bool"
+      readWrite: "W"
+  -
+    name: "DI7"
+    isHidden: false
+    description: "Digital Input 7"
+    attributes:
+      { offsetBits: 7, offsetBytes: 0, "type": "O2T" }
+    properties:
+      valueType: "Bool"
+      readWrite: "W"
+  -
+    name: "IdentityClass"
+    isHidden: false
+    description: "Get Attributes All Command to Identity Object Instance"
+    attributes:
+      { instID: 1, objClass: 1, serviceCode: 1, type: "EM" }
+    properties:
+      valueType: "String"
+      readWrite: "R"
+  -
+    name: "IdentityClass_bytes"
+    isHidden: false
+    description: "Identity Class Object Instance. This resource can be read to view the full object instance or written to with a service code override of 5 to perform a reset operation on the device."
+    attributes:
+      { instID: 1, objClass: 1, serviceCode: 1, type: "EM" }
+    properties:
+      valueType: "Uint8array"
+      readWrite: "R"
+  -
+    name: "EtherNetLinkClass_bytes"
+    isHidden: false
+    description: "EtherNetLink Class"
+    attributes:
+      { instID: 1, objClass: 246, serviceCode: 1, type: "EM" }
+    properties:
+      valueType: "Uint8array"
+      readWrite: "R"
+  -
+    name: "VendorID"
+    isHidden: false
+    description: "Get Attribute Single Command to VendorID Attribute Within the Identity Object Instance"
+    attributes:
+      { attrID: 1, instID: 1, objClass: 1, serviceCode: 14, type: "EM" }
+    properties:
+      valueType: "Uint16"
+      readWrite: "R"
+  -
+    name: "VendorID_bytes"
+    isHidden: false
+    description: "Identity Class Object Instance Attribute Vendor ID returned in raw bytes"
+    attributes:
+      { attrID: 1, instID: 1, objClass: 1, serviceCode: 14, type: "EM" }
+    properties:
+      valueType: "Uint8array"
+      readWrite: "R"
+  -
+    name: "DeviceType"
+    isHidden: false
+    description: "Get Attribute Single Command to DeviceType Attribute Within the Identity Object Instance"
+    attributes:
+      { attrID: 2, instID: 1, objClass: 1, serviceCode: 14, type: "EM" }
+    properties:
+      valueType: "Uint16"
+      readWrite: "R"
+  -
+    name: "ProductCode"
+    isHidden: false
+    description: "Get Attribute Single Command to ProductCode Attribute Within the Identity Object Instance"
+    attributes:
+      { attrID: 3, instID: 1, objClass: 1, serviceCode: 14, type: "EM" }
+    properties:
+      valueType: "Uint16"
+      readWrite: "R"
+  -
+    name: "Revision"
+    isHidden: false
+    description: "Get Attribute Single Command to Revision Attribute Within the Identity Object Instance"
+    attributes:
+      { attrID: 4, instID: 1, objClass: 1, serviceCode: 14, type: "EM" }
+    properties:
+      valueType: "Uint16"
+      readWrite: "R"
+  -
+    name: "Status"
+    isHidden: false
+    description: "Get Attribute Single Command to Status Attribute Within the Identity Object Instance"
+    attributes:
+      { attrID: 5, instID: 1, objClass: 1, serviceCode: 14, type: "EM" }
+    properties:
+      valueType: "Uint16"
+      readWrite: "R"
+  -
+    name: "SerialNumber"
+    isHidden: false
+    description: "Get Attribute Single Command to SerialNumber Attribute Within the Identity Object Instance"
+    attributes:
+      { attrID: 6, instID: 1, objClass: 1, serviceCode: 14, type: "EM" }
+    properties:
+      valueType: "Uint32"
+      readWrite: "R"
+  -
+    name: "SerialNumber_bytes"
+    isHidden: false
+    description: "Get Attribute Single Command to SerialNumber Attribute Within the Identity Object Instance"
+    attributes:
+      { attrID: 6, instID: 1, objClass: 1, serviceCode: 14, type: "EM" }
+    properties:
+      valueType: "Uint8array"
+      readWrite: "R"
+  -
+    name: "ProductName"
+    isHidden: false
+    description: "Get Attribute Single Command to ProductName Attribute Within the Identity Object Instance"
+    attributes:
+      { attrID: 7, instID: 1, objClass: 1, serviceCode: 14, type: "EM" }
+    properties:
+      valueType: "String"
+      readWrite: "R"
+  -
+    name: "AssemblyGet"
+    isHidden: false
+    description: "Assembly Class Object Instance 112, Attribute 3"
+    attributes:
+      { attrID: 3, instID: 100, objClass: 4, serviceCode: 14, type: "EM" }
+    properties:
+      valueType: "Uint8Array"
+      readWrite: "R"
+  -
+    name: "Reset"
+    isHidden: false
+    description: "Triggers the device to emulate a power cycle"
+    attributes:
+      { instID: 1, objClass: 1, serviceCode: 5, type: "EM" }
+    properties:
+      valueType: "Uint8"
+      readWrite: "W"
+  -
+    name: "TestInt"
+    isHidden: false
+    description: "structure of all output data"
+    attributes:
+      { arraySize: 10, tagName: "TestInt", type: "logixTag" }
+    properties:
+      valueType: "Uint16Array"
+      readWrite: "R"

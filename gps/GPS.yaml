@@ -1,0 +1,102 @@
+name: "GPS"
+manufacturer: ""
+model: ""
+labels:
+  - "GPS Coordinates"
+description: "Global Positioning System"
+
+deviceResources:
+  -
+    name: Time
+    isHidden: false
+    description: "Get the current time from the GPS module"
+    properties:
+      valueType: "Float64"
+      readWrite: "R"
+      defaultValue: "0.0"
+    attributes:
+      data: "time"
+  -
+    name: Date
+    isHidden: false
+    description: "Get the current date & time from the GPS module"
+    properties:
+      valueType: "String"
+      readWrite: "R"
+      defaultValue: "0.0"
+    attributes:
+      data: "date"
+  -
+    name: Track
+    isHidden: false
+    description: "Course over ground, degrees from true north"
+    properties:
+      valueType: "Float64"
+      readWrite: "R"
+      defaultValue: "0.0"
+      units: "Degrees"
+    attributes:
+      data: "track"
+  -
+    name: Climb
+    isHidden: false
+    description: "Get the vertical speed in Meters/Sec"
+    properties:
+      valueType: "Float64"
+      readWrite: "R"
+      defaultValue: "0.0"
+      units: "Meters/Sec"
+    attributes:
+      data: "climb"
+  -
+    name: Altitude
+    isHidden: false
+    description: "Get the altitude in Meters"
+    properties:
+      valueType: "Float64"
+      readWrite: "R"
+      defaultValue: "0.0"
+      units: "Meters"
+    attributes:
+      data: "altitude"
+  -
+    name: Speed
+    isHidden: false
+    description: "Get the speed over ground in Meters/Sec"
+    properties:
+      valueType: "Float64"
+      readWrite: "R"
+      defaultValue: "0.0"
+      units: "Meters/Sec"
+    attributes:
+      data: "speed"
+  -
+    name: Latitude
+    isHidden: false
+    description: "Get the latitude in Degrees"
+    properties:
+      valueType: "Float64"
+      readWrite: "R"
+      defaultValue: "0.0"
+      units: "Degrees"
+    attributes:
+      data: "latitude"
+  -
+    name: Longitude
+    isHidden: false
+    description: "Get the longitude in Degrees"
+    properties:
+      valueType: "Float64"
+      readWrite: "R"
+      defaultValue: "0.0"
+      units: "Degrees"
+    attributes:
+      data: "longitude"
+deviceCommands:
+  -
+    name: LatitudeAndLongitude
+    isHidden: false
+    readWrite: "R"
+    resourceOperations:
+      - deviceResource: "Latitude"
+      - deviceResource: "Longitude"

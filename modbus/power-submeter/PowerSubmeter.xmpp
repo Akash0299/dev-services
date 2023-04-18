@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE modbuspal_project SYSTEM "modbuspal.dtd">
+<modbuspal_project>
+<idgen  value="8"/>
+<links selected="TCP/IP" >
+<tcpip port="1502" />
+<serial com="/dev/ttyS0" baudrate="9600" parity="even" stops="1" >
+<flowcontrol xonxoff="false" rtscts="false" />
+</serial>
+</links>
+<automation name="Current1" step="1.0" loop="true" init="0.0">
+<generator class="LinearGenerator" duration="10.0">
+<start value="0.0" relative="false"/>
+<end value="100.0" relative="false"/>
+</generator>
+</automation>
+<automation name="Current2" step="0.5" loop="true" init="0.0">
+<generator class="LinearGenerator" duration="10.0">
+<start value="0.0" relative="false"/>
+<end value="100.0" relative="false"/>
+</generator>
+</automation>
+<automation name="Energy1" step="0.55" loop="true" init="0.0">
+<generator class="LinearGenerator" duration="10.0">
+<start value="0.0" relative="false"/>
+<end value="220.0" relative="false"/>
+</generator>
+</automation>
+<automation name="Energy2" step="0.55" loop="true" init="0.0">
+<generator class="LinearGenerator" duration="10.0">
+<start value="0.0" relative="false"/>
+<end value="220.0" relative="false"/>
+</generator>
+</automation>
+<automation name="Power 1" step="1.0" loop="true" init="0.0">
+<generator class="LinearGenerator" duration="10.0">
+<start value="0.0" relative="false"/>
+<end value="1000.0" relative="false"/>
+</generator>
+</automation>
+<automation name="Power 2" step="1.5" loop="true" init="0.0">
+<generator class="LinearGenerator" duration="10.0">
+<start value="0.0" relative="false"/>
+<end value="1200.0" relative="false"/>
+</generator>
+</automation>
+<automation name="Voltage 1" step="1.0" loop="true" init="0.0">
+<generator class="LinearGenerator" duration="10.0">
+<start value="0.0" relative="false"/>
+<end value="110.0" relative="false"/>
+</generator>
+</automation>
+<automation name="Voltage 2" step="1.0" loop="true" init="0.0">
+<generator class="LinearGenerator" duration="10.0">
+<start value="0.0" relative="false"/>
+<end value="220.0" relative="false"/>
+</generator>
+</automation>
+<slave id="1" enabled="true" name="Power meter 1" implementation="modbus">
+<holding_registers>
+<register address="8" value="0" name="Current">
+<binding automation="Current1" class="Binding_SINT16" order="0"/>
+</register>
+<register address="4000" value="0" name="Energy">
+<binding automation="Energy1" class="Binding_FLOAT32" order="0"/>
+</register>
+<register address="4001" value="0">
+<binding automation="Energy1" class="Binding_FLOAT32" order="0"/>
+</register>
+<register address="4002" value="0" name="Power">
+<binding automation="Power 1" class="Binding_SINT16" order="0"/>
+</register>
+<register address="4003" value="0"/>
+<register address="4004" value="0"/>
+<register address="4005" value="0"/>
+<register address="4006" value="0"/>
+<register address="4007" value="0"/>
+<register address="4008" value="0"/>
+<register address="4009" value="0"/>
+<register address="4010" value="0"/>
+<register address="4011" value="0"/>
+<register address="4012" value="0"/>
+<register address="4013" value="0"/>
+<register address="4014" value="0"/>
+<register address="4015" value="0"/>
+<register address="4016" value="0" name="Voltage">
+<binding automation="Voltage 1" class="Binding_SINT16" order="0"/>
+</register>
+<register address="4602" value="15" name="DemandWindowSize"/>
+<register address="4603" value="0" name=""/>
+<register address="4604" value="0"/>
+<register address="4605" value="0" name=""/>
+<register address="4606" value="0"/>
+<register address="4607" value="0" name=""/>
+<register address="4608" value="50" name="LineFrequency"/>
+</holding_registers>
+<coils>
+</coils>
+<tuning>
+<reply_delay min="0" max="0" />
+<error_rates no_reply="0.0" />
+</tuning>
+</slave>
+<slave id="2" enabled="true" name="Power meter 2" implementation="modbus">
+<holding_registers>
+<register address="8" value="0" name="Current">
+<binding automation="Current1" class="Binding_SINT16" order="0"/>
+</register>
+<register address="4000" value="0" name="Energy">
+<binding automation="Energy1" class="Binding_FLOAT32" order="0"/>
+</register>
+<register address="4001" value="0">
+<binding automation="Energy1" class="Binding_FLOAT32" order="0"/>
+</register>
+<register address="4002" value="0" name="Power">
+<binding automation="Power 1" class="Binding_SINT16" order="0"/>
+</register>
+<register address="4003" value="0"/>
+<register address="4004" value="0"/>
+<register address="4005" value="0"/>
+<register address="4006" value="0"/>
+<register address="4007" value="0"/>
+<register address="4008" value="0"/>
+<register address="4009" value="0"/>
+<register address="4010" value="0"/>
+<register address="4011" value="0"/>
+<register address="4012" value="0"/>
+<register address="4013" value="0"/>
+<register address="4014" value="0"/>
+<register address="4015" value="0"/>
+<register address="4016" value="0" name="Voltage">
+<binding automation="Voltage 1" class="Binding_SINT16" order="0"/>
+</register>
+<register address="4602" value="15" name="DemandWindowSize"/>
+<register address="4603" value="0" name=""/>
+<register address="4604" value="0"/>
+<register address="4605" value="0" name=""/>
+<register address="4606" value="0"/>
+<register address="4607" value="0" name=""/>
+<register address="4608" value="50" name="LineFrequency"/>
+</holding_registers>
+<coils>
+</coils>
+<tuning>
+<reply_delay min="0" max="0" />
+<error_rates no_reply="0.0" />
+</tuning>
+</slave>
+</modbuspal_project>

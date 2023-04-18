@@ -1,0 +1,231 @@
+name: Random-Integer-Device
+manufacturer: IOTech
+description: Example of Device-Virtual
+model: Device-Virtual-01
+labels: [device-virtual-example]
+deviceResources:
+  - description: used to decide whether to re-generate a random value
+    name: EnableRandomization_Int8
+    isHidden: true
+    properties:
+      valueType: Bool
+      readWrite: W
+      units: Random
+      defaultValue: "true"
+  - description: used to decide whether to re-generate a random value
+    name: EnableRandomization_Int16
+    isHidden: true
+    properties:
+      valueType: Bool
+      readWrite: W
+      units: Random
+      defaultValue: "true"
+  - description: used to decide whether to re-generate a random value
+    name: EnableRandomization_Int32
+    isHidden: true
+    properties:
+      valueType: Bool
+      readWrite: W
+      units: Random
+      defaultValue: "true"
+  - description: used to decide whether to re-generate a random value
+    name: EnableRandomization_Int64
+    isHidden: true
+    properties:
+      valueType: Bool
+      readWrite: W
+      units: Random
+      defaultValue: "true"
+  - description: Generate random int8 value
+    name: Int8
+    isHidden: false
+    properties:
+      valueType: Int8
+      readWrite: RW
+      units: random int8 value
+      defaultValue: "0"
+  - description: Generate random int16 value
+    name: Int16
+    isHidden: false
+    properties:
+      valueType: Int16
+      readWrite: RW
+      units: random int16 value
+      defaultValue: "0"
+  - description: Generate random int32 value
+    name: Int32
+    isHidden: false
+    properties:
+      valueType: Int32
+      readWrite: RW
+      units: random int32 value
+      defaultValue: "0"
+  - description: Generate random int64 value
+    name: Int64
+    isHidden: false
+    properties:
+      valueType: Int64
+      readWrite: RW
+      units: random int64 value
+      defaultValue: "0"
+  - description: used to decide whether to re-generate a random value
+    name: EnableRandomization_Int8Array
+    isHidden: true
+    properties:
+      valueType: Bool
+      readWrite: W
+      units: Random
+      defaultValue: "true"
+  - description: used to decide whether to re-generate a random value
+    name: EnableRandomization_Int16Array
+    isHidden: true
+    properties:
+      valueType: Bool
+      readWrite: W
+      units: Random
+      defaultValue: "true"
+  - description: used to decide whether to re-generate a random value
+    name: EnableRandomization_Int32Array
+    isHidden: true
+    properties:
+      valueType: Bool
+      readWrite: W
+      units: Random
+      defaultValue: "true"
+  - description: used to decide whether to re-generate a random value
+    name: EnableRandomization_Int64Array
+    isHidden: true
+    properties:
+      valueType: Bool
+      readWrite: W
+      units: Random
+      defaultValue: "true"
+  - description: Generate random int8 array value
+    name: Int8Array
+    isHidden: false
+    properties:
+      valueType: Int8array
+      readWrite: RW
+      units: random int8 array value
+      defaultValue: '[0]'
+  - description: Generate random int16 array value
+    name: Int16Array
+    isHidden: false
+    properties:
+      valueType: Int16array
+      readWrite: RW
+      units: random int16 array value
+      defaultValue: '[0]'
+  - description: Generate random int32 array value
+    name: Int32Array
+    isHidden: false
+    properties:
+      valueType: Int32array
+      readWrite: RW
+      units: random int32 array value
+      defaultValue: '[0]'
+  - description: Generate random int64 array value
+    name: Int64Array
+    isHidden: false
+    properties:
+      valueType: Int64array
+      readWrite: RW
+      units: random int64 array value
+      defaultValue: '[0]'
+deviceCommands:
+  - name: Int8
+    isHidden: false
+    readWrite: R
+    resourceOperations:
+      - deviceResource: Int8
+  - name: Int8_Set
+    isHidden: false
+    readWrite: W
+    resourceOperations:
+      - deviceResource: Int8
+      - deviceResource: EnableRandomization_Int8
+        defaultValue: "false"
+  - name: Int16
+    isHidden: false
+    readWrite: R
+    resourceOperations:
+      - deviceResource: Int16
+  - name: Int16_Set
+    isHidden: false
+    readWrite: W
+    resourceOperations:
+      - deviceResource: Int16
+      - deviceResource: EnableRandomization_Int16
+        defaultValue: "false"
+  - name: Int32
+    isHidden: false
+    readWrite: R
+    resourceOperations:
+      - deviceResource: Int32
+  - name: Int32_Set
+    isHidden: false
+    readWrite: W
+    resourceOperations:
+      - deviceResource: Int32
+      - deviceResource: EnableRandomization_Int32
+        defaultValue: "false"
+  - name: Int64
+    isHidden: false
+    readWrite: R
+    resourceOperations:
+      - deviceResource: Int64
+  - name: Int64_Set
+    isHidden: false
+    readWrite: W
+    resourceOperations:
+      - deviceResource: Int64
+      - deviceResource: EnableRandomization_Int64
+        defaultValue: "false"
+  - name: Int8Array
+    isHidden: false
+    readWrite: R
+    resourceOperations:
+      - deviceResource: Int8Array
+  - name: Int8Array_Set
+    isHidden: false
+    readWrite: W
+    resourceOperations:
+      - deviceResource: Int8Array
+      - deviceResource: EnableRandomization_Int8Array
+        defaultValue: "false"
+  - name: Int16Array
+    isHidden: false
+    readWrite: R
+    resourceOperations:
+      - deviceResource: Int16Array
+  - name: Int16Array_Set
+    isHidden: false
+    readWrite: W
+    resourceOperations:
+      - deviceResource: Int16Array
+      - deviceResource: EnableRandomization_Int16Array
+        defaultValue: "false"
+  - name: Int32Array
+    isHidden: false
+    readWrite: R
+    resourceOperations:
+      - deviceResource: Int32Array
+  - name: Int32Array_Set
+    isHidden: false
+    readWrite: W
+    resourceOperations:
+      - deviceResource: Int32Array
+      - deviceResource: EnableRandomization_Int32Array
+        defaultValue: "false"
+  - name: Int64Array
+    isHidden: false
+    readWrite: R
+    resourceOperations:
+      - deviceResource: Int64Array
+  - name: Int64Array_Set
+    isHidden: false
+    readWrite: W
+    resourceOperations:
+      - deviceResource: Int64Array
+      - deviceResource: EnableRandomization_Int64Array
+        defaultValue: "false"

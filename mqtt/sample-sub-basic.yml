@@ -1,0 +1,53 @@
+name: "Example-Sub-Basic-Profile"
+manufacturer: "IOTech"
+model: "MQTT-Device"
+labels:
+  - "test"
+description: "Test device profile"
+deviceResources:
+  - name: "message"
+    isHidden: true
+    description: "device notification message"
+    attributes:
+      subTopic: "${deviceName}/message"
+      qos: "0"
+    properties:
+      valueType: "String"
+      readWrite: "R"
+
+  - name: "switch"
+    isHidden: true
+    description: "device switch"
+    attributes:
+      subTopic: "${deviceName}/switch"
+      qos: "0"
+    properties:
+      valueType: "Bool"
+      readWrite: "R"
+
+  - name: humidity
+    description: "device humidity"
+    attributes:
+      subTopic: "${deviceName}/humidity"
+      qos: "0"
+    properties:
+      valueType: "Int16"
+      readWrite: "R"
+
+  - name: energy
+    description: "device energy"
+    attributes:
+      subTopic: "${deviceName}/energy"
+      qos: "0"
+    properties:
+      valueType: "Int16"
+      readWrite: "R"
+
+  - name: temperature
+    description: "device temperature"
+    attributes:
+      subTopic: "${deviceName}/temperature"
+      qos: "0"
+    properties:
+      valueType: "Float64"
+      readWrite: "R"

@@ -1,0 +1,1681 @@
+name: bacnet-sim-profile
+manufacturer: ""
+model: ""
+labels: []
+deviceResources:
+  - description: ""
+    name: BacnetSimulator-object-identifier
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 75
+      type: 8
+  - description: ""
+    name: BacnetSimulator-object-name
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 77
+      type: 8
+  - description: ""
+    name: BacnetSimulator-object-type
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 79
+      type: 8
+  - description: ""
+    name: BacnetSimulator-system-status
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 112
+      type: 8
+  - description: ""
+    name: BacnetSimulator-vendor-name
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 121
+      type: 8
+  - description: ""
+    name: BacnetSimulator-vendor-identifier
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 120
+      type: 8
+  - description: ""
+    name: BacnetSimulator-model-name
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 70
+      type: 8
+  - description: ""
+    name: BacnetSimulator-firmware-revision
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 44
+      type: 8
+  - description: ""
+    name: BacnetSimulator-application-software-version
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 12
+      type: 8
+  - description: ""
+    name: BacnetSimulator-protocol-version
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 98
+      type: 8
+  - description: ""
+    name: BacnetSimulator-protocol-revision
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 139
+      type: 8
+  - description: ""
+    name: BacnetSimulator-protocol-services-supported
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 123
+      property: 97
+      type: 8
+  - description: ""
+    name: BacnetSimulator-protocol-object-types-supported
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 123
+      property: 96
+      type: 8
+  - description: ""
+    name: BacnetSimulator-object-list
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: R
+    attributes:
+      instance: 123
+      property: 76
+      type: 8
+  - description: ""
+    name: BacnetSimulator-max-apdu-length-accepted
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 62
+      type: 8
+  - description: ""
+    name: BacnetSimulator-segmentation-supported
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 107
+      type: 8
+  - description: ""
+    name: BacnetSimulator-apdu-timeout
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 11
+      type: 8
+  - description: ""
+    name: BacnetSimulator-number-of-APDU-retries
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 73
+      type: 8
+  - description: ""
+    name: BacnetSimulator-device-address-binding
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 123
+      property: 30
+      raw: true
+      type: 8
+  - description: ""
+    name: BacnetSimulator-database-revision
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 155
+      type: 8
+  - description: ""
+    name: BacnetSimulator-description
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 28
+      type: 8
+  - description: ""
+    name: BacnetSimulator-local-time
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 57
+      type: 8
+  - description: ""
+    name: BacnetSimulator-utc-offset
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Int32
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 119
+      type: 8
+  - description: ""
+    name: BacnetSimulator-local-date
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 56
+      type: 8
+  - description: ""
+    name: BacnetSimulator-daylight-savings-status
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Bool
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 24
+      type: 8
+  - description: ""
+    name: BacnetSimulator-location
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 58
+      type: 8
+  - description: ""
+    name: BacnetSimulator-active-cov-subscriptions
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 123
+      property: 152
+      raw: true
+      type: 8
+  - description: ""
+    name: BacnetSimulator-time-synchronization-recipients
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 123
+      property: 116
+      raw: true
+      type: 8
+  - description: ""
+    name: BacnetSimulator-time-synchronization-interval
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 204
+      type: 8
+  - description: ""
+    name: BacnetSimulator-align-intervals
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Bool
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 193
+      type: 8
+  - description: ""
+    name: BacnetSimulator-interval-offset
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 123
+      property: 195
+      type: 8
+  - description: ""
+    name: analog_input_0-object-identifier
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 75
+      type: 0
+  - description: ""
+    name: analog_input_0-object-name
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 77
+      type: 0
+  - description: ""
+    name: analog_input_0-object-type
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 79
+      type: 0
+  - description: ""
+    name: analog_input_0-present-value
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 85
+      type: 0
+  - description: ""
+    name: analog_input_0-status-flags
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 0
+      property: 111
+      type: 0
+  - description: ""
+    name: analog_input_0-event-state
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 36
+      type: 0
+  - description: ""
+    name: analog_input_0-out-of-service
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Bool
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 81
+      type: 0
+  - description: ""
+    name: analog_input_0-units
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 117
+      type: 0
+  - description: ""
+    name: analog_input_0-cov-increment
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 22
+      type: 0
+  - description: ""
+    name: analog_input_0-description
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 28
+      type: 0
+  - description: ""
+    name: analog_input_0-reliability
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 103
+      type: 0
+  - description: ""
+    name: analog_input_0-time-delay
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 113
+      type: 0
+  - description: ""
+    name: analog_input_0-notification-class
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 17
+      type: 0
+  - description: ""
+    name: analog_input_0-high-limit
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 45
+      type: 0
+  - description: ""
+    name: analog_input_0-low-limit
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 59
+      type: 0
+  - description: ""
+    name: analog_input_0-deadband
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 25
+      type: 0
+  - description: ""
+    name: analog_input_0-limit-enable
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 0
+      property: 52
+      type: 0
+  - description: ""
+    name: analog_input_0-event-enable
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 0
+      property: 35
+      type: 0
+  - description: ""
+    name: analog_input_0-acked-transitions
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 0
+      property: 0
+      type: 0
+  - description: ""
+    name: analog_input_0-notify-type
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 72
+      type: 0
+  - description: ""
+    name: analog_input_0-event-time-stamps
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 0
+      property: 130
+      raw: true
+      type: 0
+  - description: ""
+    name: analog_input_0-9997
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 9997
+      type: 0
+  - description: ""
+    name: analog_input_0-9998
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 9998
+      type: 0
+  - description: ""
+    name: analog_input_0-9999
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Int32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 9999
+      type: 0
+  - description: ""
+    name: analog_input_1-object-identifier
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 75
+      type: 0
+  - description: ""
+    name: analog_input_1-object-name
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 77
+      type: 0
+  - description: ""
+    name: analog_input_1-object-type
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 79
+      type: 0
+  - description: ""
+    name: analog_input_1-present-value
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 85
+      type: 0
+  - description: ""
+    name: analog_input_1-status-flags
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 1
+      property: 111
+      type: 0
+  - description: ""
+    name: analog_input_1-event-state
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 36
+      type: 0
+  - description: ""
+    name: analog_input_1-out-of-service
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Bool
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 81
+      type: 0
+  - description: ""
+    name: analog_input_1-units
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 117
+      type: 0
+  - description: ""
+    name: analog_input_1-cov-increment
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 22
+      type: 0
+  - description: ""
+    name: analog_input_1-description
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 28
+      type: 0
+  - description: ""
+    name: analog_input_1-reliability
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 103
+      type: 0
+  - description: ""
+    name: analog_input_1-time-delay
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 113
+      type: 0
+  - description: ""
+    name: analog_input_1-notification-class
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 17
+      type: 0
+  - description: ""
+    name: analog_input_1-high-limit
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 45
+      type: 0
+  - description: ""
+    name: analog_input_1-low-limit
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 59
+      type: 0
+  - description: ""
+    name: analog_input_1-deadband
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 25
+      type: 0
+  - description: ""
+    name: analog_input_1-limit-enable
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 1
+      property: 52
+      type: 0
+  - description: ""
+    name: analog_input_1-event-enable
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 1
+      property: 35
+      type: 0
+  - description: ""
+    name: analog_input_1-acked-transitions
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 1
+      property: 0
+      type: 0
+  - description: ""
+    name: analog_input_1-notify-type
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 72
+      type: 0
+  - description: ""
+    name: analog_input_1-event-time-stamps
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 1
+      property: 130
+      raw: true
+      type: 0
+  - description: ""
+    name: analog_input_1-9997
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 9997
+      type: 0
+  - description: ""
+    name: analog_input_1-9998
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 9998
+      type: 0
+  - description: ""
+    name: analog_input_1-9999
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Int32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 9999
+      type: 0
+  - description: ""
+    name: analog_output_0-object-identifier
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 75
+      type: 1
+  - description: ""
+    name: analog_output_0-object-name
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 77
+      type: 1
+  - description: ""
+    name: analog_output_0-object-type
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 79
+      type: 1
+  - description: ""
+    name: analog_output_0-present-value
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 85
+      type: 1
+  - description: ""
+    name: analog_output_0-status-flags
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 0
+      property: 111
+      type: 1
+  - description: ""
+    name: analog_output_0-event-state
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 36
+      type: 1
+  - description: ""
+    name: analog_output_0-out-of-service
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Bool
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 81
+      type: 1
+  - description: ""
+    name: analog_output_0-units
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 117
+      type: 1
+  - description: ""
+    name: analog_output_0-priority-array
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: R
+    attributes:
+      instance: 0
+      property: 87
+      type: 1
+  - description: ""
+    name: analog_output_0-relinquish-default
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 104
+      type: 1
+  - description: ""
+    name: analog_output_1-object-identifier
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 75
+      type: 1
+  - description: ""
+    name: analog_output_1-object-name
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 77
+      type: 1
+  - description: ""
+    name: analog_output_1-object-type
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 79
+      type: 1
+  - description: ""
+    name: analog_output_1-present-value
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 85
+      type: 1
+  - description: ""
+    name: analog_output_1-status-flags
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 1
+      property: 111
+      type: 1
+  - description: ""
+    name: analog_output_1-event-state
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 36
+      type: 1
+  - description: ""
+    name: analog_output_1-out-of-service
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Bool
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 81
+      type: 1
+  - description: ""
+    name: analog_output_1-units
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 117
+      type: 1
+  - description: ""
+    name: analog_output_1-priority-array
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: R
+    attributes:
+      instance: 1
+      property: 87
+      type: 1
+  - description: ""
+    name: analog_output_1-relinquish-default
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 104
+      type: 1
+  - description: ""
+    name: analog_value_0-object-identifier
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 75
+      type: 2
+  - description: ""
+    name: analog_value_0-object-name
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 77
+      type: 2
+  - description: ""
+    name: analog_value_0-object-type
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 79
+      type: 2
+  - description: ""
+    name: analog_value_0-present-value
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 85
+      type: 2
+  - description: ""
+    name: analog_value_0-status-flags
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 0
+      property: 111
+      type: 2
+  - description: ""
+    name: analog_value_0-event-state
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 36
+      type: 2
+  - description: ""
+    name: analog_value_0-out-of-service
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Bool
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 81
+      type: 2
+  - description: ""
+    name: analog_value_0-units
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 117
+      type: 2
+  - description: ""
+    name: analog_value_0-cov-increment
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 22
+      type: 2
+  - description: ""
+    name: analog_value_0-description
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 28
+      type: 2
+  - description: ""
+    name: analog_value_0-time-delay
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 113
+      type: 2
+  - description: ""
+    name: analog_value_0-notification-class
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 17
+      type: 2
+  - description: ""
+    name: analog_value_0-high-limit
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 45
+      type: 2
+  - description: ""
+    name: analog_value_0-low-limit
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 59
+      type: 2
+  - description: ""
+    name: analog_value_0-deadband
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 25
+      type: 2
+  - description: ""
+    name: analog_value_0-limit-enable
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 0
+      property: 52
+      type: 2
+  - description: ""
+    name: analog_value_0-event-enable
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 0
+      property: 35
+      type: 2
+  - description: ""
+    name: analog_value_0-acked-transitions
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 0
+      property: 0
+      type: 2
+  - description: ""
+    name: analog_value_0-notify-type
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 0
+      property: 72
+      type: 2
+  - description: ""
+    name: analog_value_0-event-time-stamps
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 0
+      property: 130
+      raw: true
+      type: 2
+  - description: ""
+    name: analog_value_1-object-identifier
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 75
+      type: 2
+  - description: ""
+    name: analog_value_1-object-name
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 77
+      type: 2
+  - description: ""
+    name: analog_value_1-object-type
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 79
+      type: 2
+  - description: ""
+    name: analog_value_1-present-value
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 85
+      type: 2
+  - description: ""
+    name: analog_value_1-status-flags
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 1
+      property: 111
+      type: 2
+  - description: ""
+    name: analog_value_1-event-state
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 36
+      type: 2
+  - description: ""
+    name: analog_value_1-out-of-service
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Bool
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 81
+      type: 2
+  - description: ""
+    name: analog_value_1-units
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 117
+      type: 2
+  - description: ""
+    name: analog_value_1-cov-increment
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 22
+      type: 2
+  - description: ""
+    name: analog_value_1-description
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: String
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 28
+      type: 2
+  - description: ""
+    name: analog_value_1-time-delay
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 113
+      type: 2
+  - description: ""
+    name: analog_value_1-notification-class
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint64
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 17
+      type: 2
+  - description: ""
+    name: analog_value_1-high-limit
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 45
+      type: 2
+  - description: ""
+    name: analog_value_1-low-limit
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 59
+      type: 2
+  - description: ""
+    name: analog_value_1-deadband
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Float32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 25
+      type: 2
+  - description: ""
+    name: analog_value_1-limit-enable
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 1
+      property: 52
+      type: 2
+  - description: ""
+    name: analog_value_1-event-enable
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 1
+      property: 35
+      type: 2
+  - description: ""
+    name: analog_value_1-acked-transitions
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 1
+      property: 0
+      type: 2
+  - description: ""
+    name: analog_value_1-notify-type
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint32
+      readWrite: RW
+    attributes:
+      instance: 1
+      property: 72
+      type: 2
+  - description: ""
+    name: analog_value_1-event-time-stamps
+    isHidden: false
+    tag: ""
+    tags: {}
+    properties:
+      valueType: Uint8Array
+      readWrite: R
+    attributes:
+      instance: 1
+      property: 130
+      raw: true
+      type: 2
+deviceCommands: []

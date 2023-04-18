@@ -1,0 +1,75 @@
+name: "sensor-tag-cc2650"
+manufacturer: "Texas Instruments"
+model: "2650 STK"
+labels:
+  - "BLE"
+description: "TI SensorTag 2650 STK"
+deviceResources:
+  -
+    name: "CC2650TemperatureConfiguration"
+    isHidden: false
+    description: "Temperature Configuration"
+    attributes:
+      characteristicUuid: "f000aa22-0451-4000-b000-000000000000"
+    properties:
+      valueType: Bool
+      readWrite: W
+  -
+    name: "CC2650TemperatureData"
+    isHidden: false
+    description: "Temperature Data"
+    attributes:
+      characteristicUuid: "f000aa21-0451-4000-b000-000000000000"
+      startByte: 0
+    properties:
+      valueType: Float32
+      readWrite: R
+  -
+    name: "CC2650TemperatureNotification"
+    isHidden: false
+    description: "Temperature Notification"
+    attributes:
+      isNotification: true
+      deviceResource: CC2650TemperatureData
+    properties:
+      valueType: Bool
+      readWrite: RW
+
+  -
+    name: "CC2650HumidityConfiguration"
+    isHidden: false
+    description: "Humidity Configuration"
+    attributes:
+      characteristicUuid: "f000aa22-0451-4000-b000-000000000000"
+    properties:
+      valueType: Bool
+      readWrite: W
+  -
+    name: "CC2650HumidityData"
+    isHidden: false
+    description: "Humidity Data"
+    attributes:
+      characteristicUuid: "f000aa21-0451-4000-b000-000000000000"
+      startByte: 2
+    properties:
+      valueType: Float32
+      readWrite: R
+  -
+    name: "CC2650HumidityDataNotification"
+    isHidden: false
+    description: "Humidity Notification"
+    attributes:
+      isNotification: true
+      deviceResource: CC2650HumidityData
+    properties:
+      valueType: Bool
+      readWrite: RW
+
+deviceCommands:
+  -
+    name: "HDC1000Data"
+    isHidden: false
+    readWrite: R
+    resourceOperations:
+      - { deviceResource: "CC2650TemperatureData" }
+      - { deviceResource: "CC2650HumidityData"}

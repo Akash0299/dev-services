@@ -1,0 +1,19 @@
+name: sample-json
+manufacturer: Intel Corp.
+description: REST Device that sends in Json
+model: Some 3rd party app sending JSON
+labels: [rest, json]
+deviceResources:
+  - description: JSON message
+    name: json
+    isHidden: true
+    properties:
+      valueType: String
+      readWrite: W
+      mediaType: application/json
+deviceCommands:
+  - name: PostJson
+    isHidden: true
+    readWrite: W
+    resourceOperations:
+      - deviceResource: json

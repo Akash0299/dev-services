@@ -1,0 +1,54 @@
+name: "Example-Sub-JSON-Profile"
+manufacturer: "IOTech"
+model: "MQTT-Device"
+labels:
+  - "test"
+description: "Test device profile"
+deviceResources:
+  - name: "switch"
+    isHidden: true
+    description: "room switch"
+    attributes:
+      subTopic: "${deviceName}/room"
+      qos: "0"
+      msgFormat: "json"
+      jsonPath: "switch"
+    properties:
+      valueType: "Bool"
+      readWrite: "R"
+
+  - name: "temperature"
+    isHidden: true
+    description: "room temperature"
+    attributes:
+      subTopic: "${deviceName}/room"
+      qos: "0"
+      msgFormat: "json"
+      jsonPath: "temp"
+    properties:
+      valueType: "Float32"
+      readWrite: "R"
+
+  - name: "humidity"
+    isHidden: true
+    description: "room humidity"
+    attributes:
+      subTopic: "${deviceName}/room"
+      qos: "0"
+      msgFormat: "json"
+      jsonPath: "humidity.value"
+    properties:
+      valueType: "Int16"
+      readWrite: "R"
+
+  - name: number
+    isHidden: true
+    description: "room number"
+    attributes:
+      subTopic: "${deviceName}/room"
+      qos: "0"
+      msgFormat: "json"
+      jsonPath: "number"
+    properties:
+      valueType: "String"
+      readWrite: "R"

@@ -1,0 +1,65 @@
+name: "MQ7255M-IO-Device"
+manufacturer: "ICPDAS"
+model: "MQ-7255M"
+labels:
+  - "mqtt"
+description: "The MQ-7255M is an Ethernet I/O device equipped with 8-channel DI and 8-channel DO"
+deviceResources:
+  - name: DO0
+    isHidden: true
+    description: "Digital output channel 0"
+    attributes:
+      subTopic: "${deviceName}/GetValue/DO0"
+      pubTopic: "${deviceName}/SetValue/DO0"
+      qos: "0"
+    properties:
+      valueType: "String"
+      readWrite: "RW"
+
+  - name: DO1
+    isHidden: true
+    description: "Digital output channel 1"
+    attributes:
+      subTopic: "${deviceName}/GetValue/DO1"
+      pubTopic: "${deviceName}/SetValue/DO1"
+      qos: "0"
+    properties:
+      valueType: "String"
+      readWrite: "RW"
+
+  - name: DI0
+    isHidden: true
+    description: "Digital input channel 0"
+    attributes:
+      subTopic: "${deviceName}/GetValue/DI0"
+      qos: "0"
+    properties:
+      valueType: "String"
+      readWrite: "R"
+
+  - name: DI1
+    isHidden: true
+    description: "Digital input channel 1"
+    attributes:
+      subTopic: "${deviceName}/GetValue/DI1"
+      qos: "0"
+    properties:
+      valueType: "String"
+      readWrite: "R"
+
+deviceCommands:
+  -
+    name: DO
+    isHidden: false
+    readWrite: "RW"
+    resourceOperations:
+      - { deviceResource: "DO0" }
+      - { deviceResource: "DO1" }
+
+  -
+    name: DI
+    isHidden: false
+    readWrite: "R"
+    resourceOperations:
+      - { deviceResource: "DI0" }
+      - { deviceResource: "DI1" }

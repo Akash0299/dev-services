@@ -1,0 +1,115 @@
+name: Prosys-OPC-UA-Simulation-Server-Profile
+manufacturer: Prosys
+description: OPC-UA Example
+labels: [opc-ua]
+deviceResources:
+  - description: The current time on the server
+    name: CurrentTime
+    isHidden: true
+    properties:
+      valueType: Int64
+      readWrite: R
+      units: Int64
+      defaultValue: "0"
+    attributes:
+      dataTypeId:
+        identifier: 8
+        identifierType: NUMERIC
+        namespaceIndex: 0
+      nodeAttribute: value
+      nodeId:
+        identifier: Int64
+        identifierType: STRING
+        namespaceIndex: 5
+  - description: A Simulated Counter
+    name: Counter1
+    isHidden: false
+    properties:
+      valueType: UInt32
+      readWrite: R
+      units: String
+      defaultValue: "0"
+    attributes:
+      dataTypeId:
+        identifier: 7
+        identifierType: NUMERIC
+        namespaceIndex: 0
+      nodeAttribute: value
+      nodeId:
+        identifier: UInt32
+        identifierType: STRING
+        namespaceIndex: 5
+  - description: A static UInt32 variable
+    name: StaticUInt32
+    isHidden: false
+    properties:
+      valueType: UInt32
+      readWrite: RW
+      units: Integer
+      defaultValue: "0"
+    attributes:
+      dataTypeId:
+        identifier: 7
+        identifierType: NUMERIC
+        namespaceIndex: 0
+      nodeAttribute: value
+      nodeId:
+        identifier: UInt32
+        identifierType: STRING
+        namespaceIndex: 5
+  - description: A static string variable
+    name: StringStatic
+    isHidden: false
+    properties:
+      valueType: String
+      readWrite: RW
+      units: Integer
+    attributes:
+      dataTypeId:
+        identifier: 12
+        identifierType: NUMERIC
+        namespaceIndex: 0
+      nodeAttribute: value
+      nodeId:
+        identifier: String
+        identifierType: STRING
+        namespaceIndex: 5
+  - description: The Server State
+    name: ServerState
+    isHidden: false
+    properties:
+      valueType: Int32
+      readWrite: RW
+      units: Int32
+      defaultValue: "0"
+    attributes:
+      dataTypeId:
+        identifier: 6
+        identifierType: NUMERIC
+        namespaceIndex: 0
+      nodeAttribute: value
+      nodeId:
+        identifier: Int32
+        identifierType: STRING
+        namespaceIndex: 5
+deviceCommands:
+  - name: Counter1
+    isHidden: false
+    readWrite: R
+    resourceOperations:
+      - deviceResource: Counter1
+  - name: StaticUInt32
+    isHidden: false
+    readWrite: RW
+    resourceOperations:
+      - deviceResource: StaticUInt32
+  - name: StringStatic
+    isHidden: false
+    readWrite: RW
+    resourceOperations:
+      - deviceResource: StringStatic
+  - name: ServerState
+    isHidden: false
+    readWrite: R
+    resourceOperations:
+      - deviceResource: ServerState

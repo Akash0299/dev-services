@@ -1,0 +1,33 @@
+name: "Example-Pub-Profile"
+manufacturer: "IOTech"
+model: "MQTT-Device"
+labels:
+  - "test"
+description: "Test device profile"
+deviceResources:
+  - name: temperature
+    isHidden: false
+    description: "room temp"
+    attributes:
+      pubTopic: "${deviceName}/room/temperature"
+    properties:
+      valueType: "Float32"
+      readWrite: "W"
+
+  - name: humidity
+    isHidden: false
+    description: "room humidity"
+    attributes:
+      pubTopic: "${deviceName}/room/humidity"
+    properties:
+      valueType: "Int16"
+      readWrite: "W"
+
+deviceCommands:
+  -
+    name: room
+    isHidden: false
+    readWrite: "W"
+    resourceOperations:
+      - { deviceResource: "temperature" }
+      - { deviceResource: "humidity" }

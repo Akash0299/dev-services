@@ -1,0 +1,133 @@
+name: "ble-sim-profile"
+labels:
+  - "BLE"
+description: "A Simulated BLE device"
+
+deviceResources:
+  -
+    name: Counter
+    isHidden: false
+    description: "An Increasing value"
+    properties:
+      valueType: "Uint32"
+      readWrite: "RW"
+    attributes:
+      characteristicUuid: "deadbeef-0000-1000-0000-008cafebabe1"
+  -
+    name: CounterNotification
+    isHidden: false
+    description: "CharacteristicOne Notification"
+    properties:
+      valueType: "Bool"
+      readWrite: "RW"
+    attributes:
+      deviceResource: "Counter"
+      isNotification: true
+
+  -
+    name: Random
+    isHidden: false
+    description: "An Random value"
+    properties:
+      valueType: "Float64"
+      readWrite: "RW"
+    attributes:
+      characteristicUuid: "deadbeef-0000-1000-0000-008cafebabe2"
+  -
+    name: RandomNotification
+    isHidden: false
+    description: "Random Notification"
+    properties:
+      valueType: "Bool"
+      readWrite: "RW"
+    attributes:
+      deviceResource: "Random"
+      isNotification: true
+
+  -
+    name: Sawtooth
+    isHidden: false
+    properties:
+      valueType: "Float64"
+      readWrite: "RW"
+    attributes:
+      characteristicUuid: "deadbeef-0000-1000-0000-008cafebabe3"
+  -
+    name: SawtoothNotification
+    isHidden: false
+    description: "Sawtooth Notification"
+    properties:
+      valueType: "Bool"
+      readWrite: "RW"
+    attributes:
+      deviceResource: "Sawtooth"
+      isNotification: true
+
+  -
+    name: Sinusoid
+    isHidden: false
+    properties:
+      valueType: "Float64"
+      readWrite: "RW"
+    attributes:
+      characteristicUuid: "deadbeef-0000-1000-0000-008cafebabe4"
+  -
+    name: SinusoidNotification
+    isHidden: false
+    description: "Sinusoid Notification"
+    properties:
+      valueType: "Bool"
+      readWrite: "RW"
+    attributes:
+      deviceResource: "Sinusoid"
+      isNotification: true
+
+  -
+    name: Square
+    isHidden: false
+    properties:
+      valueType: "Float64"
+      readWrite: "RW"
+    attributes:
+      characteristicUuid: "deadbeef-0000-1000-0000-008cafebabe5"
+  -
+    name: SquareNotification
+    isHidden: false
+    description: "Square Notification"
+    properties:
+      valueType: "Bool"
+      readWrite: "RW"
+    attributes:
+      deviceResource: "Square"
+      isNotification: true
+
+  -
+    name: Triangle
+    isHidden: false
+    properties:
+      valueType: "Float64"
+      readWrite: "RW"
+    attributes:
+      characteristicUuid: "deadbeef-0000-1000-0000-008cafebabe6"
+  -
+    name: TriangleNotification
+    isHidden: false
+    description: "Triangle Notification"
+    properties:
+      valueType: "Bool"
+      readWrite: "RW"
+    attributes:
+      deviceResource: "Triangle"
+      isNotification: true
+
+  -
+    name: Static
+    isHidden: false
+    properties:
+      valueType: "Uint32"
+      readWrite: "RW"
+    attributes:
+      characteristicUuid: "deadbeef-0000-1000-0000-008cafebabe7"
+      startByte: 0
+
+deviceCommands: []

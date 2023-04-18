@@ -1,0 +1,27 @@
+name: "Example-Read-Profile"
+manufacturer: "IOTech"
+model: "MQTT-Device"
+labels:
+  - "test"
+description: "Test device profile"
+deviceResources:
+  - name: SwitchButton
+    isHidden: true
+    description: "room Switch"
+    attributes:
+      reqTopic: "${deviceName}/Switch/Req"
+      reqTemp: "{ \"cmd\":\"switch\",\"reqId\":\"${uuid}\" }"
+      resTopic: "${deviceName}/Switch/Res"
+      msgFormat: "json"
+      jsonPath: "switch"
+    properties:
+      valueType: "Bool"
+      readWrite: "R"
+
+deviceCommands:
+  -
+    name: "Switch"
+    readWrite: "R"
+    isHidden: false
+    resourceOperations:
+      - { deviceResource: "SwitchButton", mappings: {"true":"ON","false":"OFF"} }

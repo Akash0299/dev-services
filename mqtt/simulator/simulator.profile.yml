@@ -1,0 +1,77 @@
+name: "MQTT-Device-Simulator"
+manufacturer: "IOTech"
+model: "MQTT-Device"
+labels:
+  - "mqtt"
+  - "mock"
+description: "The MQTT-Device is a Simulator for mocking a MQTT device"
+deviceResources:
+  # Test async value
+  - name: "switch"
+    isHidden: true
+    description: "room switch"
+    attributes:
+      subTopic: "${deviceName}/room"
+      qos: "0"
+      msgFormat: "json"
+      jsonPath: "switch"
+    properties:
+      valueType: "Bool"
+      readWrite: "R"
+
+  - name: "temperature"
+    isHidden: true
+    description: "room temperature"
+    attributes:
+      subTopic: "${deviceName}/room"
+      qos: "0"
+      msgFormat: "json"
+      jsonPath: "temp"
+    properties:
+      valueType: "Float32"
+      readWrite: "R"
+
+  - name: "humidity"
+    isHidden: true
+    description: "room humidity"
+    attributes:
+      subTopic: "${deviceName}/room"
+      qos: "0"
+      msgFormat: "json"
+      jsonPath: "humidity.value"
+    properties:
+      valueType: "Int32"
+      readWrite: "R"
+
+  - name: "number"
+    isHidden: true
+    description: "room number"
+    attributes:
+      # Test GET command
+      reqTopic: "${deviceName}/room/number/req"
+      reqTemp: "{ \"cmd\":\"number\",\"reqId\":\"${uuid}\" }"
+      resTopic: "${deviceName}/room/number/res"
+      msgFormat: "json"
+      jsonPath: "number"
+      qos: "0"
+      # Test PUT command
+      pubTopic: "${deviceName}/room/number"
+    properties:
+      valueType: "String"
+      readWrite: "RW"
+
+deviceCommands:
+  -
+    name: "room"
+    isHidden: true
+    readWrite: "R"
+    resourceOperations:
+      - { deviceResource: "switch", mappings: {"true":"ON","false":"OFF"} }
+      - { deviceResource: "temperature" }
+      - { deviceResource: "humidity" }
+  -
+    name: "roomNumber"
+    isHidden: false
+    readWrite: "RW"
+    resourceOperations:
+      - { deviceResource: "number" }

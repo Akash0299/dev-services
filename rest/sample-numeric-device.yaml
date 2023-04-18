@@ -1,0 +1,31 @@
+name: sample-numeric
+manufacturer: Intel Corp.
+description: REST Device that sends in ints and floats
+model: Some 3rd party App sending int & floats
+labels: [rest, float64, int64]
+deviceResources:
+  - description: Int64 value
+    name: int
+    isHidden: true
+    properties:
+      valueType: Int64
+      readWrite: W
+      mediaType: text/plain
+  - description: Float64 value
+    name: float
+    isHidden: true
+    properties:
+      valueType: Float64
+      readWrite: W
+      mediaType: text/plain
+deviceCommands:
+  - name: PostInt
+    isHidden: true
+    readWrite: W
+    resourceOperations:
+      - deviceResource: int
+  - name: PostFloat
+    isHidden: true
+    readWrite: W
+    resourceOperations:
+      - deviceResource: float

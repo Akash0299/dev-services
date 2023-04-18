@@ -1,0 +1,35 @@
+name: "sample-data"
+manufacturer: "IOTech"
+description: "WebSocket connection that receives simple data"
+
+deviceResources:
+  - name: Int
+    isHidden: true
+    properties:
+      valueType: "Int64"
+      readWrite: "R"
+    attributes:
+      jsonPath: "Payload.Int"
+  - name: Float
+    isHidden: true
+    properties:
+      valueType: "Float64"
+      readWrite: "R"
+    attributes:
+      jsonPath: "Payload.Float"
+  - name: String
+    isHidden: true
+    properties:
+      valueType: "String"
+      readWrite: "R"
+    attributes:
+      jsonPath: "Payload.String"
+
+deviceCommands:
+  - name: Sample
+    isHidden: true
+    readWrite: "R"
+    resourceOperations:
+      - { deviceResource: "Int" }
+      - { deviceResource: "Float" }
+      - { deviceResource: "String" }
